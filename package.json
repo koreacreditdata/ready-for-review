@@ -1,0 +1,38 @@
+{
+  "name": "ready-for-review",
+  "version": "1.0.0",
+  "description": "A GitHub App build with Probot to ping reviewers on Slack",
+  "author": "Woongcheol Yang <woongcheol@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/koreacreditdata/ready-for-review.git",
+  "homepage": "https://github.com/koreacreditdata/ready-for-review",
+  "bugs": "https://github.com/koreacreditdata/ready-for-review/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js"
+  },
+  "dependencies": {
+    "lodash.sample": "^4.2.1",
+    "probot": "^7.0.0",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  }
+}
